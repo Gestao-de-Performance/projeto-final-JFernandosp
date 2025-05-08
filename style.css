@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-link: #201035;
+    --cor-texto: #3e0a81;
+    --cor-texto-destaque: #541f99;
+    --cor-texto-branco: #ffffff;
+    --cor-texto-categoria: #CC7F0B;
+
+    --cor-background-azul: #b3def3;
+    --cor-background-roxo: #28187b;
+    --cor-background-roxo-claro: #6c17dde1;
+    --cor-background-rodape: #ded0f17e;
+
+    --cor-borda: 90, 19, 180;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--cor-background-azul) ;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding-top: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-link);
+}
+
+a:hover{
+    color: var(--cor-texto-destaque);
+}
+
+.marginSite{
+    margin: 0 10%;
+}
+
+.alinharDivs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gapDiv{
+    gap: 20%;
+}
+
+.gapDivGradBlog{
+    gap: 15%;
+}
+
+.marginSuperior{
+    margin-top: 5%
+}
+
+.corTextoBranco{
+    color: var(--cor-texto-branco);
+}
+span{
+    color: var(--cor-texto);
+}
+
+@media screen and (max-width: 1024px){
+    .alinharDivs {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .marginSite {
+        margin: 0 5%;
+    }
+}
+
+
+/*Início Cabeçalho*/
+
+.campoBusca{
+    border: 1px solid rgba(var(--cor-borda), 0.2);
+    padding: 2% 4%;
+    min-width: 220px;
+}
+
+.input{
+    border: none;
+    outline: none;
+    color: var(--cor-texto);    
+}
+
+.input::placeholder{
+    color: var(--cor-texto);
+    opacity: 0.2;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*Fim Cabeçalho*/
+
+/*Início Apresentação*/
+
+.alinharTitulos{
+    max-width: 940px;
+    
+    text-align: center;
+    margin: 5%;
+}
+h1{    
+    font-size: 4rem;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+h3{
+    font-size: 3rem;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+h4{
+    font-size: 2.5rem;    
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+.tamanhoImg{
+    width: 100%;
+    height: auto;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px){
+    h1, h4{
+        font-size: 2rem;
+    }
+    h2, h3{
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (max-width: 767px){
+    h1, h4{
+        font-size: 1rem;
+    }
+    h2, h3{
+        font-size: 0.5rem;
+    }
+}
+/*Fim Apresentação*/
+
+/*Inicio Botão Serviços*/
+.botaoServiços{
+    display: block;
+    background-color: var(--cor-background-roxo-claro);
+    color: var(--cor-texto-branco);
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+    position: relative;
+    top: -45px;
+    transition: 0.3s;
+}
+
+.botaoServiços:hover{
+    background-color: #5a13b4;
+    color: var(--cor-texto-branco);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px){
+    .botaoServiços {
+        top: -30px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botaoServiços {
+        top: -15px;
+        font-size: 1.5rem;
+    }
+}
+/*Fim Botão Serviços*/
+
+
+/*Início Blog*/
+
+
+.tamanhoLetrasBotão{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.containerBlog{    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.textoDestaque{
+    color: var(--cor-texto-destaque);
+}
+
+.botaoBlog{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 340px;
+}
+
+.botaoBlog > div{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.textoCategoria{
+    color: var(--cor-texto-categoria);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .botaoBlog{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botaoBlog{
+        width: 100%;
+    }
+
+    .botaoBlog > img {
+        width: 100%;
+    }
+}
+/*Fim Blog*/
+
+/*Início Rodapé*/
+footer{
+    background-color: var(--cor-background-rodape);
+    padding: 3% 0;
+}
+
+.containerRodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.containerRodape > div{
+    width: 160px;
+}
+
+.containerContatos{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 767px){
+    footer{
+        padding: 5% 0;
+    }
+
+    .containerRodape{
+        flex-wrap: wrap;
+    }
+
+    .containerRodape > div{
+        margin: 10%;
+    }
+}
+/*Fim Rodapé*/
