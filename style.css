@@ -12,7 +12,7 @@
     --cor-background-roxo-claro: #6c17dde1;
     --cor-background-rodape: #ded0f17e;
 
-    --cor-borda: 90, 19, 180;
+    
 }
 
 *{
@@ -55,8 +55,8 @@ a:hover{
     gap: 20%;
 }
 
-.gapDivGradBlog{
-    gap: 15%;
+.gapDivGradLink{
+    gap: 50%;
 }
 
 .marginSuperior{
@@ -81,57 +81,27 @@ span{
         margin: 0 5%;
     }
 }
-
-
-/*Início Cabeçalho*/
-
-.campoBusca{
-    border: 1px solid rgba(var(--cor-borda), 0.2);
-    padding: 2% 4%;
-    min-width: 220px;
-}
-
-.input{
-    border: none;
-    outline: none;
-    color: var(--cor-texto);    
-}
-
-.input::placeholder{
-    color: var(--cor-texto);
-    opacity: 0.2;
-}
-
-button{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-/*Fim Cabeçalho*/
-
 /*Início Apresentação*/
 
 .alinharTitulos{
-    max-width: 940px;
-    
+    max-width: 940px;    
     text-align: center;
     margin: 5%;
 }
 h1{    
-    font-size: 4rem;
-    color: var(--cor-texto);
-    font-weight: 400;
-}
-
-h2{
     font-size: 2.5rem;
     color: var(--cor-texto);
     font-weight: 400;
 }
 
+h2{
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
 h3{
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--cor-texto);
     font-weight: 400;
 }
@@ -141,12 +111,6 @@ h4{
     color: var(--cor-texto);
     font-weight: 400;
 }
-
-.tamanhoImg{
-    width: 100%;
-    height: auto;
-}
-
 p{
     font-size: 1.5rem;
     color: var(--cor-texto);
@@ -180,7 +144,7 @@ p{
     font-size: 2rem;
     font-weight: 600;
     width: 100%;
-    text-align: center;
+    text-align: justify;
     padding: 2% 0;
     position: relative;
     top: -45px;
@@ -208,7 +172,7 @@ p{
 /*Fim Botão Serviços*/
 
 
-/*Início Blog*/
+/*Início Serviços*/
 
 
 .tamanhoLetrasBotão{
@@ -216,22 +180,22 @@ p{
     font-weight: 400;
 }
 
-.containerBlog{    
+.containerServiços{    
     display: flex;
     flex-wrap: wrap;
-    gap: 3%;
+    gap: 2%;
 }
 
 .textoDestaque{
     color: var(--cor-texto-destaque);
 }
 
-.botaoBlog{
+.alinharServiços{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 340px;
+    max-width: 380px;
 }
 
-.botaoBlog > div{
+.alinharServiços > div{
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -248,21 +212,21 @@ p{
 
 
 @media screen and (max-width: 1024px){
-    .botaoBlog{
+    .botaoServiços{
         margin-bottom: 5%;
     }
 }
 
 @media screen and (max-width: 767px){
-    .botaoBlog{
+    .botaoServiços{
         width: 100%;
     }
 
-    .botaoBlog > img {
+    .botaoServiços > img {
         width: 100%;
     }
 }
-/*Fim Blog*/
+/*Fim Serviços*/
 
 /*Início Rodapé*/
 footer{
@@ -286,6 +250,10 @@ footer{
     align-items: center;
     gap: 3%;
     justify-content: space-around;
+}
+.fonte{
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px){
