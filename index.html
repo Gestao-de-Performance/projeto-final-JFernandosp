@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <meta name="keyworks" content="Palavras Chaves, Automação de dados, Analise de dados, Tecnologia de automação">
     <meta name="author" content="JF">
     <title>João Fernando - Site</title>
-    <link rel="icon" href="img/Icone.png" type="image/x-icon">
+    <link rel="icon" href="img/Icone.png" alt="Icone" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="marginSite">
         <nav class="alinharDivs">
@@ -20,47 +22,53 @@
                     <a href="#servicos">Serviços</a>
                     <a href="#contatos">Contatos</a>
                 </div>
-            </div>            
+            </div>
         </nav>
     </header>
 
     <main class="marginSuperior">
         <!-- Apresentação do Site -->
-        <section class="sobre marginSite" id="sobre">                           
-            <div class="alinharTitulos">
-                <div class="containerServiços">
-                    <img src="img/Tech.jpeg" >
-                </div>  
-                <div class="containerServiços alinharDivs">
-                   <h1>Seu projeto digital <strong>do jeito que você sonhou.</strong></h1>  
-                   <h2>Automatize seus processos de dados e <strong>aumente a eficiência.</strong></h2>             
-                </div>                
-                <div>
-                    <h3>Designs modernos, codigos eficientes e <strong>resultados que fazem toda a diferença.</strong></h3> 
-                </div> 
-                <div>
-                    <img src="img/Fut.jpg" >
-                </div>
+        <section class="sobre marginSite" id="sobre">
+            <div class="alinharDivs gapDiv">
+                <h1>Seu projeto digital <strong>do jeito que você sonhou.</strong></h1>
+                <img src="img/Tech.png" alt="tecnologia">
+                <h2>Automatize seus processos de dados e <strong>aumente a eficiência.</strong></h2>
             </div>
+             <br><br>
+            <div class="alinharDivs">
+                <h3>Designs modernos, codigos eficientes e <strong>resultados que fazem toda a diferença.</strong></h3>
+                <img src="img/Fut.jpg" alt="futuro">
+            </div>
+            <br><br><br>
             <div class="alinharTitulos">
-                <h4> Sobre nós</h4>
-                <p>Com mais de 60 colaboradores, a JF Technologia oferece soluções diversas no mercado de tecnologia da informação.</p>
-                <p><strong>Sempre agregando valor aos clientes e buscando as melhores alternativas tecnológicas e de negócio para atender suas necessidades.</strong></p>
-            </div>       
+                <p class="faixaServiços">Sobre nós:</p>
+            </div>
+             <br><br>
+            <div class="alinharDivs gapDiv">
+                <img src="img/Desenvolvedor.png" alt="desenvolvedor">
+                <p>Há mais de 35 anos oferecendo soluções completas em tecnologia e infraestrutura. Com mais de 60 colaboradores, 
+                    a JF Technologia oferece soluções diversas no mercado de tecnologia da informação.<br><br>
+                <strong>Sempre agregando valor aos clientes e buscando as melhores alternativas tecnológicas e de
+                        negócio para atender suas necessidades.</strong><br><br>
+                    O resultado é um sistema altamente configurável, com capacidade de atender a empresas de pequeno a médio porte, 
+                    permitindo a evolução da complexidade do negócio, e a aplicação das tecnologias adequadas no momento certo dessa evolução.</p>
+            </div>
+        </section>
+         <br><br>
 
-
-        <!-- Botão Serviços -->
+        <!-- Faixa Serviços -->
         <section class="marginSite">
-            <a class="botaoServiços" href="#">Serviços JF Technologia</a>
-        </section>       
-
+            <p class="faixaServiços">Serviços JF Technologia</p>
+        </section>
+         <br>
         <!-- Serviços -->
-         <section class="servicos marginSite" id="servicos">
-            <div class="servicos containerServiços">
+        <section class="servicos marginSite" id="servicos">
+            <div class="servicos containerServiços gapDiv">
                 <a class="alinharServiços" href="#">
-                    <img src="img/ERP.png" alt="Gerenciamento">
+                    <img class="tamImgSer" src="img/ERP.png" alt="Gerenciamento">
                     <div>
-                        <h5 class="tamanhoLetrasBotão">Controle geral das operações da empresa, produtos, serviços e financeiro.</h5>
+                        <h5 class="tamanhoLetrasBotão">Controle geral das operações da empresa, produtos, serviços e
+                            financeiro.</h5>
                         <div class="alinharDivs">
                             <span class="textoCategoria">Gerenciamento Corporativo</span>
                         </div>
@@ -68,17 +76,17 @@
                 </a>
 
                 <a class="alinharServiços" href="#">
-                    <img src="img/Mobile.jpg" alt="Mobile">
+                    <img class="tamImgSer" src="img/Mobile.jpg" alt="Mobile">
                     <div>
                         <h6 class="tamanhoLetrasBotão">PDV movél leva até o cliente toda funcionalidade.</h6>
                         <div class="alinharDivs">
-                            <span class="textoCategoria">Versão Mobile</span>                            
+                            <span class="textoCategoria">Versão Mobile</span>
                         </div>
                     </div>
                 </a>
 
                 <a class="alinharServiços" href="#">
-                    <img src="img/Contabil.jpg" alt="Contabil">
+                    <img class="tamImgSer" src="img/Contabil.jpg" alt="Contabil">
                     <div>
                         <h7 class="tamanhoLetrasBotão">Novo modulo contabil totalmente redesenhado.</h7>
                         <div class="alinharDivs">
@@ -88,7 +96,7 @@
                 </a>
 
                 <a class="alinharServiços" href="#">
-                    <img src="img/Fiscal.jpg" alt="Fiscal">
+                    <img class="tamImgSer" src="img/Fiscal.jpg" alt="Fiscal">
                     <div>
                         <h8 class="tamanhoLetrasBotão">O Modulo de livros fiscais.</h8>
                         <div class="alinharDivs">
@@ -97,25 +105,26 @@
                     </div>
                 </a>
             </div>
-         </section>
+        </section>
     </main>
     <footer class="contatos marginSuperior" id="contatos">
         <div class="containerRodape marginSite">
             <div>
-                <a href="#"><img width="100%" src="img/logo.jpg"></a>
+                <a href="#"><img width="100%" src="img/logo.jpg" alt="logo"></a>
                 <div class="containerContatos">
-                    <a href="#"><img src="img/facebook.png"></a>
-                    <a href="#"><img src="img/instagram.png"></a>
-                    <a href="#"><img src="img/linkedin.png"></a>
-                    <a href="#"><img src="img/x.png"></a>
-                    <a href="#"><img src="img/whatsapp.png"></a>
+                    <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
+                    <a href="#"><img src="img/x.png" alt="x"></a>
+                    <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
                 </div>
             </div>
-            <a href="#"><img src=""></a>
+            <a href="#"><img src="img/Localização.jpg" alt="Localização"></a>
         </div>
         <p class="fonte">"JF Technologia © 2025. Todos os direitos reservados. Proibida a reprodução sem autorização."
 
         </p>
     </footer>
 </body>
+
 </html>

@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --cor-link: #201035;
-    --cor-texto: #3e0a81;
-    --cor-texto-destaque: #541f99;
+    --cor-link: #562696;
+    --cor-texto: #65399e;
+    --cor-texto-destaque: #944cf3;
     --cor-texto-branco: #ffffff;
     --cor-texto-categoria: #CC7F0B;
 
     --cor-background-azul: #b3def3;
-    --cor-background-roxo: #28187b;
     --cor-background-roxo-claro: #6c17dde1;
     --cor-background-rodape: #ded0f17e;
 
@@ -42,17 +41,19 @@ a:hover{
 }
 
 .marginSite{
-    margin: 0 10%;
+    margin: 0 15%;
 }
 
 .alinharDivs{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
+
 .gapDiv{
-    gap: 20%;
+    gap: 2%;
 }
 
 .gapDivGradLink{
@@ -82,14 +83,8 @@ span{
     }
 }
 /*Início Apresentação*/
-
-.alinharTitulos{
-    max-width: 940px;    
-    text-align: center;
-    margin: 5%;
-}
 h1{    
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--cor-texto);
     font-weight: 400;
 }
@@ -112,9 +107,11 @@ h4{
     font-weight: 400;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--cor-texto);
     font-weight: 400;
+    text-align: justify;
+    
 }
 
 @media screen and (max-width: 1024px){
@@ -131,50 +128,54 @@ p{
         font-size: 1rem;
     }
     h2, h3{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 }
 /*Fim Apresentação*/
 
 /*Inicio Botão Serviços*/
-.botaoServiços{
+.faixaServiços{
     display: block;
     background-color: var(--cor-background-roxo-claro);
     color: var(--cor-texto-branco);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
-    text-align: justify;
-    padding: 2% 0;
+    text-align:center;
+    padding: 3%;
     position: relative;
-    top: -45px;
     transition: 0.3s;
+    
 }
 
-.botaoServiços:hover{
+.faixaServiços:hover{
     background-color: #5a13b4;
     color: var(--cor-texto-branco);
     transition: 0.3s;
 }
 
 @media screen and (max-width: 1024px){
-    .botaoServiços {
+    .faixaServiços {
         top: -30px;
     }
 }
 
 @media screen and (max-width: 767px){
-    .botaoServiços {
+    .faixaServiços {
         top: -15px;
         font-size: 1.5rem;
     }
 }
-/*Fim Botão Serviços*/
+/*Fim Faixa Serviços*/
 
 
 /*Início Serviços*/
 
-
+.tamImgServ{
+    width: 244px;
+    height: 244px;
+    flex-wrap: wrap;
+}
 .tamanhoLetrasBotão{
     font-size: 1rem;
     font-weight: 400;
@@ -191,8 +192,9 @@ p{
 }
 
 .alinharServiços{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     max-width: 380px;
+    min-height: 150px;
 }
 
 .alinharServiços > div{
@@ -212,17 +214,17 @@ p{
 
 
 @media screen and (max-width: 1024px){
-    .botaoServiços{
+    .alinharServiços{
         margin-bottom: 5%;
     }
 }
 
 @media screen and (max-width: 767px){
-    .botaoServiços{
+    .alinharServiços{
         width: 100%;
     }
 
-    .botaoServiços > img {
+    .alinharServiços > img {
         width: 100%;
     }
 }
