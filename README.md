@@ -1,1 +1,28 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NB1kVF3X)
+# Projeto Final - João Fernando
+
+Este repositório contém o projeto final desenvolvido para a disciplina ministrada pela faculdade Unintese.
+
+## Descrição
+
+O projeto tem como objetivo aplicar conceitos de desenvolvimento web utilizando HTML e CSS. O conteúdo do projeto foi criado para consolidar os conhecimentos adquiridos durante o curso, seguindo os requisitos definidos pelos instrutores.
+
+## Estrutura do Projeto
+
+- **HTML**: Responsável pela estrutura do site.
+- **CSS**: Responsável pela estilização e layout.
+
+## Como executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Gestao-de-Performance/projeto-final-JFernandosp.git
+   ```
+2. Abra o arquivo `index.html` em seu navegador preferido.
+
+## Créditos
+
+Desenvolvido por [JFernandosp](https://github.com/JFernandosp) como parte do curso em Gestão de Performance.
+
+## Licença
+
+Este projeto é apenas para fins educacionais.
